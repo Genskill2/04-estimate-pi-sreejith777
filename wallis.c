@@ -25,9 +25,10 @@ int main(void) {
 }
 float walllis_pi(int i){
 float piby2;
-  piby2 =1
-  for(int j= 0; j<i;j++)
+  piby2 =1;
+  for(int j= 0; j<i;j++){
     piby2 = piby2*(4j*j/(4j*j-1))
+    }
     return 2*piby2
     }
     
