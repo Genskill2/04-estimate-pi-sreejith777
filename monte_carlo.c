@@ -7,8 +7,8 @@ float mc_pi(int);
 
 float frandom() {
   long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
+  float x = (float)q/(float)RAND_MAX;
+  return x;
 }
 
 int main(void) {
