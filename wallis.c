@@ -23,15 +23,19 @@ int main(void) {
     }
   }
 }
-float wallis_pi(int i){
-float pibytwo;
-  pibytwo =1.0;
-  for(int j= 0; j<i;j++){
-    pibytwo = pibytwo*(4j*j/(4j*j-1));
+
+ float wallis_pi(int i){
+float k = 1.0;
+  
+  for(int j= 1; j<=i;j++){
+   k*= (float)(4*(j*j))/(float)((4*(j*j))-1);
+  
+   
     }
-    return 2*pibytwo;
+    return 2*k;
     }
     
+   
 
   
   
